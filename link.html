@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dr. Wealth </title>
+
+            <link rel="icon" href="favicon.jpg" type="image/jpeg">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f0f0f0;
+		}
+        header {
+		background-color: #9d9d9e;
+		color: #fff;
+		padding: 20px;
+		text-align: center;
+        text-shadow: 2px 2px 4px black;
+        border-radius: 10px;
+		box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.699);
+	}
+
+	h1 {
+		margin: 0;
+	}
+
+	.container {
+		margin: 20px;
+		padding: 20px;
+		background-color: #fff;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+	}
+
+	form {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 20px;
+	}
+
+	form label {
+		width: 100%;
+		margin-bottom: 5px;
+		font-weight: bold;
+	}
+
+	form input[type="text"], form input[type="number"], form select {
+		width: 100%;
+		padding: 10px;
+		margin-bottom: 20px;
+		border: none;
+		border-radius: 5px;
+		background-color: #f2f2f2;
+	}
+
+	form input[type="submit"] {
+		background-color: #9d9d9e;
+		color: #fff;
+		padding: 10px 20px;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+        text-shadow: 2px 1px 5px black;
+		box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+	}
+	
+	form input[type="reset"] {
+		background-color: #9d9d9e;
+		color: #fff;
+		padding: 10px 20px;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+        text-shadow: 2px 1px 5px black;
+		box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+	}
+
+	table {
+		width: 100%;
+		margin-top: 20px;
+		border-collapse: collapse;
+	}
+
+	th, td {
+		padding: 10px;
+		border: 1px solid #ddd;
+		text-align: left;
+	}
+
+	th {
+		background-color: #9d9d9e;
+		color: #fff;
+        text-shadow: 2px 1px 6px black
+	}
+
+	tr:nth-child(even) {
+		background-color: #f2f2f2;
+	}
+
+	
+
+</style>
+</head>
+<body>
+	<header>
+		<h1>Students</h1>
+	</header>
+	<div class="container">
+		<form>
+			<label for="student_name">Student's Name:</label>
+			<input type="text" id="student_name" name="student_name" required>
+            
+
+		<label for="student's_category">Student's Category:</label>
+		<select id="student's_category" name="student's_category" required>
+			<option value="" disabled selected>Select a category</option>
+			<option value="day_scholar">Day Scholar</option>
+			<option value="hosteler">Hosteler</option>
+		</select>
+        
+        <label for="expense_amount">Money in hand:</label>
+		<input type="number" id="expense_amount" name="expense_amount" min="0" required>
+
+        <label for="expense_amount">Active income source:</label>
+		<select id="student's_category" name="student's_category" required>
+			<option value="" disabled selected>Select a category</option>
+			<option value="YEs">Yes</option>
+			<option value="No">No</option>
+		</select>
+       
+        <input type="submit" value="Submit">
+		<input type="reset" value="Reset">
+	
+		
+	</form>
+
+	
